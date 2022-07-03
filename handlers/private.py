@@ -8,21 +8,21 @@ from helpers.filters import command, other_filters2
 @Client.on_message(command(["start", f"start@{BOT_USERNAME}"]))
 async def start(_, message: Message):
                 await message.reply_photo(
-                "https://telegra.ph/file/528375998e45c907832e0.jpg",
-                caption=(f"""**Salam {message.from_user.mention} 🎵\nMən {bot}!\nSəsli sohbətlərdə mahnı oxuya bilən botam. Ban yetkisiz, Səsli söhbətləri idarə yetkisi verip, Asistanı gruba atın zəhmət olmasa.\n\nDüzen Tasarım [Cinom Müzik 🎙️](https://t.me/lordchattt).**"""),
+                "https://te.legra.ph/file/6a98b64bbdf7e60845729.jpg",
+                caption=(f"""**Salam {message.from_user.mention} 🎵\nMən {bot}!\nSəsli sohbətlərdə mahnı oxuya bilən botam. Ban yetkisiz, Səsli söhbətləri idarə yetkisi verip, Asistanı gruba atın zəhmət olmasa.\n\nDüzen Tasarım [Siyah Müzik 🎙️](https://t.me/QarabagTeams).**"""),
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ Grubuna Ekle ❱ ➕", url=f"https://t.me/MusicoLCroBot?startgroup=true"
+                        "➕ ❰ Grubuna Ekle ❱ ➕", url=f"https://t.me/SiyahMusic_Bot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔊 Asistan", url="https://t.me/CinomMusicAsissant"
+                        "🔊 Asistan", url="https://t.me/Siyahmusicasistant"
                     ),
                     InlineKeyboardButton(
-                        "💬 Sohbət", url="https://t.me/lordchattt"
+                        "💬 Sohbət", url="https://t.me/QarabagTeams"
                     )
                 ],
                 [
@@ -30,7 +30,7 @@ async def start(_, message: Message):
                         "🧩 Əmrlər" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "Resmi Kanal 🇦🇿", url=f"https://t.me/cinoomusic"
+                        "Resmi Kanal 🇦🇿", url=f"https://t.me/BozQurdMmcc"
                     )
                 ]
                 
@@ -56,7 +56,7 @@ async def bilgi(_, message: Message):
                          "Ana menü🏠", callback_data="cbstart")
                  ],[
                      InlineKeyboardButton(
-                         "⚙ Qurucu", url="https://t.me/nevarisoyumiste")
+                         "⚙ Qurucu", url="https://t.me/qarabagizim")
                  ]
              ]
          )
@@ -82,7 +82,7 @@ async def cbbilgi(_, query: CallbackQuery):
         ],
         [
           InlineKeyboardButton(
-            "⚙ Qurucu", url="https://t.me/nevarisoyumiste")
+            "⚙ Qurucu", url="https://t.me/qarabagizim")
         ]
       ]
      ))
@@ -95,7 +95,7 @@ async def herkes(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "⚙ Qurucu", url="https://t.me/nevarisoyumiste")
+                         "⚙ Qurucu", url="https://t.me/qarabagizim")
                  ],
                  [
                      InlineKeyboardButton(
@@ -113,7 +113,7 @@ async def admin(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "⚙ Qurucu", url="https://t.me/nevarisoyumiste")
+                         "⚙ Qurucu", url="https://t.me/qarabagizim")
                  ],
                  [
                      InlineKeyboardButton(
@@ -131,15 +131,15 @@ async def cbstart(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ Grubuna Ekle ❱ ➕", url=f"https://t.me/MusicoLCroBot?startgroup=true"
+                        "➕ ❰ Grubuna Ekle ❱ ➕", url=f"https://t.me/SiyahMusic_Bot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔊 Asistan", url="https://t.me/CinomMusicAsissant"
+                        "🔊 Asistan", url="https://t.me/Siyahmusicasistant"
                     ),
                     InlineKeyboardButton(
-                        "💬 Sohbət", url="https://t.me/Lordchattt"
+                        "💬 Sohbət", url="https://t.me/QarabagTemas"
                     )
                 ],
                 [
@@ -147,7 +147,7 @@ async def cbstart(_, query: CallbackQuery):
                         "🌀 Əmrlər" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "Resmi Kanal 🇦🇿", url=f"https://t.me/CinooMusic"
+                        "Resmi Kanal 🇦🇿", url=f"https://t.me/BozQurdMmcc"
                     )
                 ]
                 
